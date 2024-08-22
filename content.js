@@ -1,13 +1,17 @@
-function clickButton(selector) {
-  const button = document.querySelector(selector);
-  if (!button) return;
-  button.click();
-  console.log("Skip button clicked");
-}
-
 function main() {
+  let nIntervId;
+
+  function clickButton(selector) {
+    const button = document.querySelector(selector);
+    if (!button) return;
+    setTimeout(() => {
+      button.click();
+      console.log("Skip button clicked");
+    }, 5300);
+  }
+
   clickButton(".ytp-skip-ad-button");
   clickButton(".ytp-ad-skip-button-modern");
 }
 
-setInterval(main, 500);
+main();
