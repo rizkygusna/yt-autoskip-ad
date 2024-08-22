@@ -7,7 +7,7 @@ function main() {
     setTimeout(() => {
       button.click();
       console.log("Skip button clicked");
-    }, 5300);
+    }, 5600);
   }
 
   clickButton(".ytp-skip-ad-button");
